@@ -8,10 +8,10 @@ const GameOver = props => {
         <View style={styles.screen}>
             <Card style={styles.cardContainer}>
                 <Text style={styles.title}>The Game is Over!</Text>
-                <Text>Number of Rounds: {props.rounds}</Text>
-                <Text>The Number was: {props.userNumber}</Text>
+                <Text style={styles.subtitle}>Number of Rounds: {props.rounds}</Text>
+                <Text style={styles.subtitle}>The Number was: {props.userNumber}</Text>
                 <View style={styles.button}>
-                    <Button title="Restart" color={Colors.accent} onPress={props.onRestart}/>
+                    <Button title="NEW GAME" color={Colors.accent} onPress={props.onRestart}/>
                 </View>
             </Card>
         </View>
@@ -36,6 +36,9 @@ const styles = StyleSheet.create({
         color: Colors.primary,
         fontSize: 22,
         paddingBottom: 20
+    },
+    subtitle: {
+        fontSize: 16.5
     }
 })
 
