@@ -38,7 +38,7 @@ const StartGameScreen = props => {
         <Card style={styles.summaryContainer}>
             <Text>You Selected</Text>
             <NumberContainer>{selectedNumber}</NumberContainer>
-            <Button title="Start Game" onPress={() => props.onStartGame(selectedNumber)} />
+            <Button title="Start Game" onPress={() => props.onStartGame(selectedNumber)} color={Colors.secondary} />
         </Card>
         );
     }
@@ -62,10 +62,10 @@ return (
                 value={enteredValue} />           
             <View style={styles.buttonContainer}>
                 <View style={styles.button}>
-                    <Button title="Reset" onPress={resetInputHandler} color={Colors.accent} />
+                    <Button title="Reset" onPress={resetInputHandler} color={Colors.tertiary} />
                 </View>
                 <View style={styles.button}>
-                    <Button title="Confirm" onPress={confirmInputHandler} color={Colors.primary} />
+                    <Button title="Confirm" onPress={confirmInputHandler} color={Colors.accent} />
                 </View>
 
             </View>
